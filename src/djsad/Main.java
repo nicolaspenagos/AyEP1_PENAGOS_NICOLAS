@@ -36,13 +36,13 @@ public class Main {
 		
 		
 		if (mid % 2 == 0) {
-			if (A[mid + 1].equals(A[mid])) {
+			if (A[mid].equals(A[mid+1])) {
 				return search(A, mid + 1, j);
 			} else {
 				return search(A, i, mid - 1);
 			}
 		} else {
-			if (!A[mid + 1].equals(A[mid])) {
+			if (!A[mid].equals(A[mid+1])) {
 				return search(A, mid + 1, j);
 			} else {
 				return search(A, i, mid - 1);
